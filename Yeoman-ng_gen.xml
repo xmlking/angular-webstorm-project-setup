@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Installation: drop in ~/.WebStormX/config/tools/  for mac ~/Library/Preferences/WebStormX/tools/-->
+<toolSet name="Yeoman[ng]">
+  <tool name="Create Route" description="Generates a controller and view, and configures a route in app/scripts/app.js connecting them." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:route $Prompt$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Controller" description="Generates a controller in app/scripts/controllers." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:controller $Prompt$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Directive" description="Generates a directive in app/scripts/directives." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:directive $Prompt$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Filter" description="Generates a filter in app/scripts/filters." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:filter $Prompt$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create View" description="Generates an HTML view file in app/views." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:view $Prompt$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Service[f]" description="Generates an AngularJS service (factory)." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:service $Prompt$ factory" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Service[s]" description="Generates an AngularJS service (service)." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:service $Prompt$ service" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Service[v]" description="Generates an AngularJS service (value)." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:service $Prompt$ value" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Create Service[c]" description="Generates an AngularJS service (constant)." showInMainMenu="true" showInEditor="false" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="yo" />
+      <option name="PARAMETERS" value="angular:service $Prompt$ constant" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
