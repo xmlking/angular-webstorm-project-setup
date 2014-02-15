@@ -95,6 +95,12 @@
     6. yo angular:filter myFilter
     7. yo angular:service myService
 
+###Note
+
+As you can see if you take a look at the generated `.gitignore` file, `node_modules` and `app\bower_components` directories cannot be committed. 
+Other developers sharing the application project have to install dependent packages by running `npm install` after cloning the repository source codes.
+Similarly `app\bower_components` directory will be populated by running `bower install`  
+
 ###Reference
 
 [grunt-bower-install]: http://stackoverflow.com/questions/18422020/how-to-update-and-include-twitter-bootstrap-3-on-webapp-or-yo-angular/19034513#19034513
