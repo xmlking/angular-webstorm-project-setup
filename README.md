@@ -33,16 +33,16 @@
   ![Yeoman Grunt WebStorm debug](Yeoman-Grunt-WebStorm-debug.png)
   3. Install Chrome Extension 'JetBrains IDE Support' for JavaScript debugging with WebStorm [JavaScipt debugging only support on Chrome browser for now]
 4. Create empty project e.g: ConsoleUI
-5. Open [Tool>Open Terminal] and run commands from VI. -> Step 2. and rest of the steps
+5. Open [Tool>Open Terminal] and run commands from Step 2. and rest of the steps
 
 ###AngularJS work flow
 
 ####Scaffold out a AngularJS project
 
 	1. mkdir ConsoleUI && cd $_		            # make a project directory and change into it. #run this if you are not using WebStrom
-	2. yo angular                               # scaffold out a AngularJS project. - Say 'No' to Bootstrap here - otherwise it'll download 2.x version
+	2. yo angular                               # scaffold out a AngularJS project.
 	   #yo angular [app-name] 	                # if you want to name of app something other then the parent directory.
-	3. bower install --save bootstrap       	# install bootstrap for your project from Bower
+	3. bower install --save bootstrap       	# install bootstrap for your project from Bower. If youman didnt install bootstrap
 	5  bower install --save angular-bootstrap   # install a angular-bootstrap
 	6. bower install --save restangular       	# https://github.com/mgonto/restangular#restangular
 	7. bower install --save angular-ui-router   # lets use angular-ui-router as  angular-route  sucks
@@ -81,7 +81,7 @@
 ####Other grunt commands
     1. grunt bower-install      # To reference new js, css files in index.html
 	2. grunt test               # Test your app
-	3. grunt server             # Preview your app
+	3. grunt serve              # Preview your app
 	4. grunt                  	# Build the application for deployment
 
 ####Other yo commands
