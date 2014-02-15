@@ -71,12 +71,14 @@
 	bower uninstall --save <package-name>   	# To Uninstalling packages.
 
 
-####If you what to Inject your Bower dependencies right into your HTML(index.html) from Grunt, install grunt-bower-install
+####Bower dependencies injected automatically into your HTML(index.html) by Grunt
 >
-1. npm install --save-dev grunt-bower-install # install missing grunt "bower-install" command
-2. Follow steps at [grunt-bower-install]
-  1. edit Gruntfile.js
-  2. edit app/index.html
+1. Do not manually edit `<!-- bower:css --> <!-- endbower -->` and `<!-- bower:js -->  <!-- endbower -->` sections in your `index.html` file.
+2. Grunt automatically injects them for you, based on your bower.json
+3. Only exception is when providers didn't include proper bower.json in their package. e.g:
+  1. app/bower_components/angular-growl/bower.json
+  2. app/bower_components/angular-translate-loader-partial/bower.json
+4. In this case I will manually fix those bower.json files with correct 'main' section.
 
 ####Other grunt commands
     1. grunt bower-install      # To reference new js, css files in index.html
