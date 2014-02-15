@@ -94,11 +94,17 @@
     6. yo angular:filter myFilter
     7. yo angular:service myService
 
-###Note
 
-As you can see if you take a look at the generated `.gitignore` file, `node_modules` and `app\bower_components` directories cannot be committed. 
-Other developers sharing the application project have to install dependent packages by running `npm install` after cloning the repository source codes.
-Similarly `app\bower_components` directory will be populated by running `bower install`  
+
+###SCM integration tips
+
+####node_modules directory
+
+As you can see if you take a look at the generated `.gitignore` file, `node_modules` directory cannot be committed. Other developers sharing the application project have to install dependent packages by running `npm install` after cloning the repository source codes.
+
+####bower_components
+
+As descrived above, `bower install` is required as `bower_components` is never shared by SCM as well as `node_modules`.
 
 ###Reference
 
