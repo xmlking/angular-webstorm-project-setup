@@ -85,7 +85,7 @@
 	4. grunt                  	# Build the application for deployment
 
 ####Other yo commands
-    1. yo angular:route myRoute                     # To create new route, controller and view
+	1. yo angular:route myRoute                    	# To create new route, controller and view
     2. yo angular:controller myController
     3. yo angular:controller myController --minsafe # for Minification Safe
     4. yo angular:controller myController --coffee  # if you are using coffeeScript
