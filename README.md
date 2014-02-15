@@ -42,7 +42,7 @@
 	2. yo angular                               # scaffold out a AngularJS project.
 	   #yo angular [app-name] 	                # if you want to name of app something other then the parent directory.
 	   
-	Note: If you checkout project from SCM, you may already have following components defined in bower.json. In this case just run `bower install`
+	Note: If you checkout a project from SCM, you may already have following components defined in bower.json. In this case just run `bower install`
 	
 	3. bower install --save bootstrap       	# install bootstrap for your project from Bower. If youman didnt install bootstrap
 	5  bower install --save angular-bootstrap   # install a angular-bootstrap
