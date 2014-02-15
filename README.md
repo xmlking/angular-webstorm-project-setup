@@ -38,9 +38,12 @@
 
 ####Scaffold out a AngularJS project
 
-	1. mkdir ConsoleUI && cd $_		            # make a project directory and change into it. #run this if you are not using WebStrom
+	1. mkdir ConsoleUI && cd $_		            # Creating app directory. #run this if you are not using WebStrom
 	2. yo angular                               # scaffold out a AngularJS project.
 	   #yo angular [app-name] 	                # if you want to name of app something other then the parent directory.
+	   
+	Note: If you checkout project from SCM, you may already have following components defined in bower.json. In this case just run `bower install`
+	
 	3. bower install --save bootstrap       	# install bootstrap for your project from Bower. If youman didnt install bootstrap
 	5  bower install --save angular-bootstrap   # install a angular-bootstrap
 	6. bower install --save restangular       	# https://github.com/mgonto/restangular#restangular
