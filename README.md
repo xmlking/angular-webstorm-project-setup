@@ -59,6 +59,7 @@
 	13. bower install --save angular-translate-loader-partial #load i18n files Asynchronously
 	14. bower install --save angular-xeditable  # http://vitalets.github.io/angular-xeditable/
 	15. bower install --save angular-cache      # better then http://jmdobry.github.io/angular-cache/guide.html#storage
+	16. bower install --save  css-spinners      # nice spinners
 
 
 ####Other bower commands
