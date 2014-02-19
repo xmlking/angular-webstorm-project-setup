@@ -21,6 +21,7 @@
 	1. brew install node   # this will install node and npm
 	2. npm install -g yo   # this will install yeoman, grunt and bower
 	3. npm install -g generator-angular  # install angular generator
+	
 
 ###WebStrom setup (one time only step)
 >
@@ -59,7 +60,8 @@
 	13. bower install --save angular-translate-loader-partial #load i18n files Asynchronously
 	14. bower install --save angular-xeditable  # http://vitalets.github.io/angular-xeditable/
 	15. bower install --save angular-cache      # better then http://jmdobry.github.io/angular-cache/guide.html#storage
-	16. bower install --save  css-spinners      # nice spinners
+	16. bower install --save css-spinners       # nice spinners
+	17. bower install --save traceur-runtime    # `traceur-compiler` offline ES6 to ES5 compile need traceur-runtime.js
 
 
 ####Other bower commands
@@ -110,6 +112,14 @@ As you can see if you take a look at the generated `.gitignore` file, `node_modu
 
 As descrived above, `bower install` is required as `bower_components` is never shared by SCM as well as `node_modules`.
 
+### Code In ES6, Transpile To ES5 As A Build-step: A Workflow For Grunt
+
+	1. npm install --save-dev grunt-traceur
+	2. npm install --save-dev es6-module-transpiler
+	3. npm install --save-dev grunt-ngmin 
+	3. config `Gruntfile.js` `grunt.initConfig` section and `watch` section
+	Note: when Yeoman supports traceur, remove  traceur config from `Gruntfile.js`. Check yeoman [ROADMAP](http://yeoman.io/roadmap.html)  
+	
 ###Reference
 
-[grunt-bower-install]: http://stackoverflow.com/questions/18422020/how-to-update-and-include-twitter-bootstrap-3-on-webapp-or-yo-angular/19034513#19034513
+[ES6 Transpile]: http://addyosmani.com/blog/author-in-es6-transpile-to-es5-as-a-build-step-a-workflow-for-grunt/
