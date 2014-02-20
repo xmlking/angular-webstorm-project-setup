@@ -83,7 +83,6 @@
 2. Grunt automatically injects them for you, based on your bower.json
 3. Only exception is when providers didn't include proper bower.json in their package. e.g:
   1. app/bower_components/angular-growl/bower.json
-  2. app/bower_components/angular-translate-loader-partial/bower.json
 4. In this case I will manually fix those bower.json files with correct 'main' section.
 
 ####Other grunt commands
@@ -120,7 +119,35 @@ As descrived above, `bower install` is required as `bower_components` is never s
 		2. Directories > exclude `node_modules` and `.tmp` directories from project. [ This is a workarround to stop endless indexing bud in WebStorm]
 	2. npm install --save-dev grunt-traceur
 	3. npm install --save-dev es6-module-transpiler // grunt-traceur or this based on your needs.
-	4. config `Gruntfile.js` `grunt.initConfig` and `watch` sections from grunt-traceur or es6-module-transpiler documentation.
+	4. config `Gruntfile.js` file `grunt.initConfig` and `watch` sections as follows
+>
+        traceur: {
+          options: {
+              // traceur options here
+              experimental: true,
+              blockBinding: true,
+              deferredFunctions: true,
+              annotations: true,
+              types: true,
+              debug:true
+          },
+          custom: {
+              files:[{
+                  expand: true,
+                  cwd: '<%= yeoman.app %>/modules/',
+                  src: ['**/*.es6.js'],
+                  dest: '<%= yeoman.app %>/modules/',
+                  ext: '.js'
+              }]
+          }
+        },
+
+        // Watches files for changes and runs tasks based on the changed files
+        watch: {
+            traceur :  {
+              files :  [ '<%= yeoman.app %>/modules/**/*.es6.js' ],
+              tasks :  [ 'newer:traceur' ]
+            },
 	
 ####Remember
 
