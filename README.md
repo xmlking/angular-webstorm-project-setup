@@ -114,11 +114,18 @@ As descrived above, `bower install` is required as `bower_components` is never s
 
 ### Code In ES6, Transpile To ES5 As A Build-step: A Workflow For Grunt
 
-	1. npm install --save-dev grunt-traceur
-	2. npm install --save-dev es6-module-transpiler
-	3. npm install --save-dev grunt-ngmin 
-	3. config `Gruntfile.js` `grunt.initConfig` section and `watch` section
-	Note: when Yeoman supports traceur, remove  traceur config from `Gruntfile.js`. Check yeoman [ROADMAP](http://yeoman.io/roadmap.html)  
+	1. In WebStorm go to Preferences  and change following setting  
+		1. JavaScript > select `ECMAScript Harmony`
+		2. Directories > exclude `node_modules` and `.tmp` directories from project. [ This is a workarround to stop endless indexing bud in WebStorm]
+	2. npm install --save-dev grunt-traceur
+	3. npm install --save-dev es6-module-transpiler // grunt-traceur or this based on your needs.
+	4. config `Gruntfile.js` `grunt.initConfig` and `watch` sections from grunt-traceur or es6-module-transpiler documentation.
+	
+####Remember
+
+1. When `ECMAScript Harmony` is enabled and WebStorm prompt this, don't do that. It will trigger endless indexing and hung the IDE (bug)
+> Node.js project detected: To separate your sources from the dependencies, create "Node.js Dependencies" JavaScript library from node_modules folder
+2. when Yeoman supports traceur, remove  traceur config from `Gruntfile.js`. Check yeoman [ROADMAP](http://yeoman.io/roadmap.html) for updates.   
 	
 ###Reference
 
