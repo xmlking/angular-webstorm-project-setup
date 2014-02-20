@@ -29,10 +29,10 @@
 2. Install AngularJS plugin
 3. copy setup/Yeoman-ng_gen.xml to WebStorm's tools folder:  Windows `~/.WebStormX/config/tools/`  or Mac `~/Library/Preferences/WebStormX/tools/`
   1. Add some Yeoman-AngularJS commands to WebStorm's [Quick List] and create a [keymap] [alt+a]. [How to Link](http://www.screenr.com/xcI8)
-  Following steps are needed to enable debugging JavaScript from within WebStrom.
-  2. Open Run -> Edit Configurations... menu,  click + to add new Node.js configuration[name it as Yeoman Grunt] and change it as showed in the pictures below
-  ![Yeoman Grunt WebStorm debug](Yeoman-Grunt-WebStorm-debug.gif)
-  3. Install Chrome Extension 'JetBrains IDE Support' for JavaScript debugging with WebStorm [JavaScipt debugging only support on Chrome browser for now]
+  2. Following steps are needed to enable debugging JavaScript from within WebStrom.
+    1. Open Run -> Edit Configurations... menu,  click + to add new Node.js configuration[name it as Yeoman Grunt] and change it as showed in the pictures below
+    ![Yeoman Grunt WebStorm debug](Yeoman-Grunt-WebStorm-debug.gif)
+    2. Install Chrome Extension 'JetBrains IDE Support' for JavaScript debugging with WebStorm [JavaScipt debugging only support on Chrome browser for now]
 4. Create empty project e.g: ConsoleUI
 5. Open [Tool>Open Terminal] and run commands from Step 2. and rest of the steps
 
