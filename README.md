@@ -124,8 +124,10 @@ As descrived above, `bower install` is required as `bower_components` is never s
 ####Remember
 
 1. When `ECMAScript Harmony` is enabled and WebStorm prompt this, don't do that. It will trigger endless indexing and hung the IDE (bug)
+
 > Node.js project detected: To separate your sources from the dependencies, create "Node.js Dependencies" JavaScript library from node_modules folder
-2. when Yeoman supports traceur, remove  traceur config from `Gruntfile.js`. Check yeoman [ROADMAP](http://yeoman.io/roadmap.html) for updates.   
+
+2. when Yeoman supports traceur, remove  traceur config from `Gruntfile.js`. Check yeoman [ROADMAP](http://yeoman.io/roadmap.html) for updates.
 	
 ###Reference
 
