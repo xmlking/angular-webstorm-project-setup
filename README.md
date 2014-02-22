@@ -118,7 +118,8 @@ As descrived above, `bower install` is required as `bower_components` is never s
 		1. JavaScript > select `ECMAScript Harmony`
 		2. Directories > exclude `node_modules` and `.tmp` directories from project. [ This is a workarround to stop endless indexing bud in WebStorm]
 	2. npm install --save-dev grunt-traceur 
-       npm install --save-dev git://github.com/xmlking/grunt-traceur.git //   my verion which is built on traceur 0.0.24 
+	   // my verion which is built on traceur 0.0.24 
+       npm install --save-dev git://github.com/xmlking/grunt-traceur.git 
 	3. npm install --save-dev es6-module-transpiler // grunt-traceur or this based on your needs.
 	4. config `Gruntfile.js` file `grunt.initConfig` and `watch` sections as follows
 >
